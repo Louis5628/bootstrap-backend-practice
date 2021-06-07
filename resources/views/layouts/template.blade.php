@@ -232,7 +232,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
     @yield('js')
-    @yield('cart-js')
+    
 
 </body>
 

@@ -49,19 +49,19 @@
                     <div class="row no-gutters d-flex flex-column align-content-end">
                         <div class="col-3 d-flex justify-content-between align-items-center">
                             <span class="text-muted">數量:</span>
-                            <span>3</span>
+                            <span id="qty" class="qty">3</span>
                         </div>
                         <div class="col-3 d-flex justify-content-between align-items-center">
                             <span class="text-muted d-flex col-1 col-md-3 px-0 mr-1">小計:</span>
-                            <span>$24.90</span>
+                            <span class="sub-total">$24.90</span>
                         </div>
                         <div class="col-3 d-flex justify-content-between align-items-center">
                             <span class="text-muted d-flex col-1 col-md-3 px-0 mr-1">運費:</span>
-                            <span>$24.90</span>
+                            <span class="shipment" data-price="24.9">$24.90</span>
                         </div>
                         <div class="col-3 d-flex justify-content-between align-items-center">
                             <span class="text-muted d-flex col-1 col-md-3 px-0 mr-1">總計:</span>
-                            <span>$24.90</span>
+                            <span class="total-price">$24.90</span>
                         </div>
 
                     </div>

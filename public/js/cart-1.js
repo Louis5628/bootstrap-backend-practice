@@ -1,4 +1,3 @@
-
 var product = document.querySelectorAll('.product')
 var add_btn = document.querySelectorAll('.addBtn')
 var sub_btn = document.querySelectorAll('.subBtn')
@@ -15,6 +14,7 @@ var product_subtotal = 0
 var shipment_free = 500
 var shipment_price = 60
 
+console.log(qty);
 
 function updateCart() {
     product_qty = 0
@@ -32,9 +32,10 @@ function updateCart() {
     subtotal.innerHTML = '$' + product_subtotal
     calcShipment()
     total_price.innerHTML = '$' + parseFloat(product_subtotal + shipment_price)
-    console.log(total_price.innerHTML);
+    console.log(product_qty);
 
 }
+
 
 updateCart();
 
@@ -43,6 +44,7 @@ add_btn.forEach(function (ele, i) {
     ele.addEventListener('click', function () {
         number[i].value = parseInt(number[i].value) + 1
         updateCart()
+        console.log(add_btn);
     })
 
 })
