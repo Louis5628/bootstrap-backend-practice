@@ -15,9 +15,20 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    const ROLE_ADMIN = 'admin';
+    const ROLE_USER = 'user';
+
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role'
     ];
+
+
+    public function client()
+    {
+        return $this->hasOne('App\UserClient', 'user_id');
+        //指到UserClient，預設有User_id，不寫也可以，寫了比較嚴謹
+    }
 
     /**
      * The attributes that should be hidden for arrays.

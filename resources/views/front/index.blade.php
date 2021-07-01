@@ -449,6 +449,21 @@
     <div class="section-7">
         <div class="container">
             <div class="row no-gutters ">
+
+                @foreach ($product as $key => $item)
+                <div class="col-12 col-md-6 col-lg-3 p-3">
+                    <a href="">
+                        <div class="img">{{ $item->photo }}</div>
+                        <img class="rounded" src="https://dummyimage.com/425x265" alt=""
+                            style="width: 100%; height: 12rem">
+                    </a>
+                    <div class="mt-3">
+                        <h3>{{ $item->type->type_name }}</h3>
+                        <h2>{{ $item->product_name }}</h2>
+                        <p class="mt-1 mb-0">{{ $item->price }}</p>
+                    </div>
+                </div>
+                @endforeach
                 <div class="col-12 col-md-6 col-lg-3 p-3">
                     <a href="">
                         <img class="rounded" src="https://dummyimage.com/425x265" alt=""

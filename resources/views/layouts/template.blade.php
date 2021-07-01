@@ -76,7 +76,7 @@
                                 </i>
 
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="{{ asset('/login') }}">Login</a>
+                                    <a class="dropdown-item" href="{{ asset('/member') }}">Login</a>
                                 </div>
                             </a>
                         </div>

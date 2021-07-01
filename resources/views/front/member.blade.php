@@ -100,19 +100,23 @@
                                     <p>or use email your account</p>
                                 </div>
                                 <div class="col-12 col-md-10 col-lg-12 d-flex justify-content-center mx-auto">
-                                    <div class="row no-gutters form">
-                                        <div class="col-12 email d-flex justify-content-center">
-                                            <input class="p-3" type="email" name="email" id="email" placeholder="Email">
+                                    <form action="" method="POST">
+                                        @csrf
+                                        <div class="row no-gutters form">
+                                            <div class="col-12 email d-flex justify-content-center">
+                                                <input class="p-3" type="email" name="email" id="email" placeholder="Email">
+                                            </div>
+                                            <div class="col-12 password d-flex justify-content-center">
+                                                <input class="p-3" type="password" name="password" id="password"
+                                                    placeholder="Password">
+                                            </div>
+                                            <div class="col-12 text-right"><a href="">Forgot your password?</a></div>
+                                            <div class="col-12 signin d-flex justify-content-center"><button type="submit"
+                                                    class="p-3">SIGN IN</button>
+                                            </div>
                                         </div>
-                                        <div class="col-12 password d-flex justify-content-center">
-                                            <input class="p-3" type="password" name="password" id="password"
-                                                placeholder="Password">
-                                        </div>
-                                        <div class="col-12 text-right"><a href="">Forgot your password?</a></div>
-                                        <div class="col-12 signin d-flex justify-content-center"><button
-                                                class="p-3">SIGN IN</button>
-                                        </div>
-                                    </div>
+
+                                    </form>
                                 </div>
                             </div>
                         </div>
